@@ -1,39 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import CustomButton from "./CustomButton";
 
 function Header() {
-    return (
-        <div className="flex bg-white p-7">
-            <Navbar />
-            <Login />
-        </div>
-    );
-}
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="flex flex-col md:flex-row justify-start items-start bg-white p-7">
+            <div className="flex justify-end items-end md:hidden">
+                <button
+                    onClick={toggleNavbar}
+                    className="text-color-main font-bold py-2 px-4 rounded focus:outline-none">
+                    <div className="space-y-2">
+                        <span className="block w-8 h-1 bg-black"></span>
+                        <span className="block w-8 h-1 bg-black"></span>
+                        <span className="block w-8 h-1 bg-black"></span>
+                    </div>
+                </button>
+            </div>
+    
+            {/* Navbar và Login */}
+            <div className={`${isOpen ? 'block' : 'hidden'} w-full md:flex md:items-center md:space-x-4`}>
+                <div className="flex flex-col md:flex-row  md:justify-center md:flex-grow space-x-8">
+                    <Navbar />
+                </div>
+                <Login />
+            </div>
+        </div>
+    );    
+}
 
 function Login() {
     return (
-        <div className="flex mx-4 ml-10">
-            <button class=" text-color-main font-bold py-2 px-4 rounded hover:bg-color-main hover:text-white">
-                Đăng nhập
-            </button>
-            <button class="text-color-main font-bold py-2 px-4 rounded hover:bg-color-main hover:text-white">
+        <div className="flex flex-row items-start justify-start mt-1 md:mt-0 ">
+            <CustomButton size="medium" className="rounded text-xl">
                 Đăng kí
-            </button>
+            </CustomButton>
+            <CustomButton size="medium" className="rounded text-xl">
+                Đăng nhập
+            </CustomButton>
         </div>
-
     );
 }
 
-function Navbar() {
-    return (
-        <div className="flex align-middle justify-between items-center ">
-            <a href="#" className="py-2 px-4" >Về chúng tôi</a>
-            <a href="#" className="py-2 px-4">Tin tức</a>
-            <a href="#" className="py-2 px-4">voucher</a>
-            <a href="#" className="py-2 px-4">Sản phẩm nổi bật</a>
-        </div>
-     
-    );
-}
 
 export default Header;

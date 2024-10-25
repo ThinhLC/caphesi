@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from '../src/components/Header'
+import Header from './components/Header';
+import Banner from './components/Banner';
+import VoucherAndPriceState from './components/VoucherAndPriceState';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Banner/>
     <Header/>
+    <VoucherAndPriceState/>
   </React.StrictMode>
 );
 
