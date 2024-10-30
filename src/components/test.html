@@ -1,29 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng giá cà phê hôm nay</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-            <g clip-path="url(#clip0_15_72)">
-                <rect width="24" height="24" fill="white"></rect>
-                <circle cx="7" cy="12" r="2" stroke="#02BA8E" stroke-linejoin="round"></circle>
-                <circle cx="17" cy="6" r="2" stroke="#02BA8E" stroke-linejoin="round"></circle>
-                <path d="M15 7L8.5 11" stroke="#02BA8E"></path>
-                <circle cx="17" cy="18" r="2" stroke="#02BA8E" stroke-linejoin="round"></circle>
-                <path d="M8.5 13.5L15 17" stroke="#02BA8E"></path>
-            </g>
-            <defs>
-                <clipPath id="clip0_15_72">
-                    <rect width="24" height="24" fill="white"></rect>
-                </clipPath>
-            </defs>
-        </g>
-    </svg>
+  <div class="container mx-auto px-4">
+    <h1 class="text-3xl font-bold text-center mb-6">Bảng giá cà phê hôm nay</h1>
+    <div class="grid grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow-md">
+        <div class="flex justify-between items-center px-6 py-4">
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Xem ngày khác
+          </button>
+          <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
+            Chia sẻ
+          </button>
+        </div>
+        <table class="w-full text-sm text-left text-gray-500">
+          <thead class="text-xs uppercase bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3">
+                Thị trường
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Trung bình
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Thay đổi
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b hover:bg-gray-100">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                Đắk Lắk
+              </th>
+              <td class="px-6 py-4"> 35,000 - 40,000</td>
+              <td class="px-6 py-4">-1,000</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-100">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                Lâm Đồng
+              </th>
+              <td class="px-6 py-4">30,000 - 35,000</td>
+              <td class="px-6 py-4">-2,000</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-100">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                Gia Lai
+              </th>
+              <td class="px-6 py-4">32,000 - 37,000</td>
+              <td class="px-6 py-4">-1,500</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-100">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                Đắk Nông
+              </th>
+              <td class="px-6 py-4">33,000 - 38,000</td>
+              <td class="px-6 py-4">-1,000</td>
+            </tr>
+            <tr class="bg-white border-b hover:bg-gray-100">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                TP.HCM
+              </th>
+              <td class="px-6 py-4">40,000 - 45,000</td>
+              <td class="px-6 py-4">-2,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="bg-white rounded-lg shadow-md">
+        <div class="flex justify-between items-center px-6 py-4">
+          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Xem ngày khác
+          </button>
+          <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
+            Chia sẻ
+          </button>
+        </div>
+        <div class="px-6 py-4">
+          <h2 class="text-lg font-bold mb-2">Ưu đãi cho người dùng mới</h2>
+          <p class="text-gray-500">Giảm 10% cho đơn hàng trên 500,000 VND. Hết hạn 03/10/2024.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
