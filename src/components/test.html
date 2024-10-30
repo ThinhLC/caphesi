@@ -7,86 +7,51 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container mx-auto px-4">
-    <h1 class="text-3xl font-bold text-center mb-6">Bảng giá cà phê hôm nay</h1>
-    <div class="grid grid-cols-2 gap-6">
-      <div class="bg-white rounded-lg shadow-md">
-        <div class="flex justify-between items-center px-6 py-4">
-          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Xem ngày khác
-          </button>
-          <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
-            Chia sẻ
-          </button>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <a href="/" class="logo">
+                <img src="img/logo.png" alt="CAPHESI">
+              </a>
+              <p class="copyright">Copyright © 2020 Landify UI Kit.</p>
+              <p class="copyright">All rights reserved</p>
+              <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-basketball-ball"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Công ty</h3>
+              <ul class="footer-links">
+                <li><a href="#">Về chúng tôi</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Gia cả</a></li>
+                <li><a href="#">Đánh giá</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Hỗ trợ</h3>
+              <ul class="footer-links">
+                <li><a href="#">Trung tâm hỗ trợ</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Pháp lý</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Luôn cập nhật</h3>
+              <form action="#" method="post" class="newsletter-form">
+                < input type="email" name="email" placeholder="Nhập email của bạn" required>
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+              </form>
+              <p class="text-gray-600">Nhận tin tức mới nhất và các chương trình khuyến mãi</p>
+            </div>
+          </div>
         </div>
-        <table class="w-full text-sm text-left text-gray-500">
-          <thead class="text-xs uppercase bg-gray-50">
-            <tr>
-              <th scope="col" class="px-6 py-3">
-                Thị trường
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Trung bình
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Thay đổi
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white border-b hover:bg-gray-100">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                Đắk Lắk
-              </th>
-              <td class="px-6 py-4"> 35,000 - 40,000</td>
-              <td class="px-6 py-4">-1,000</td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-100">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                Lâm Đồng
-              </th>
-              <td class="px-6 py-4">30,000 - 35,000</td>
-              <td class="px-6 py-4">-2,000</td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-100">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                Gia Lai
-              </th>
-              <td class="px-6 py-4">32,000 - 37,000</td>
-              <td class="px-6 py-4">-1,500</td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-100">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                Đắk Nông
-              </th>
-              <td class="px-6 py-4">33,000 - 38,000</td>
-              <td class="px-6 py-4">-1,000</td>
-            </tr>
-            <tr class="bg-white border-b hover:bg-gray-100">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                TP.HCM
-              </th>
-              <td class="px-6 py-4">40,000 - 45,000</td>
-              <td class="px-6 py-4">-2,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="bg-white rounded-lg shadow-md">
-        <div class="flex justify-between items-center px-6 py-4">
-          <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Xem ngày khác
-          </button>
-          <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
-            Chia sẻ
-          </button>
-        </div>
-        <div class="px-6 py-4">
-          <h2 class="text-lg font-bold mb-2">Ưu đãi cho người dùng mới</h2>
-          <p class="text-gray-500">Giảm 10% cho đơn hàng trên 500,000 VND. Hết hạn 03/10/2024.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      </footer>
 </body>
 </html>

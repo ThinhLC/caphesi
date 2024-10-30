@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import VoucherAndPriceState from './components/VoucherAndPriceState';
+import Footer from './components/Footer';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,7 @@ root.render(
     <Banner/>
     <Header/>
     <VoucherAndPriceState/>
+    <Footer/>
   </React.StrictMode>
 );
 

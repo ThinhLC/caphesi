@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         'color-main': 'var(--Color-main, #02BA8E)',
-        'color-reduceconstract':'#D6FCF3'
+        'color-reduceconstract':'#D6FCF3',
+        'color-footer':'#263238'
       },
       screens:{
         'xs':'480px'

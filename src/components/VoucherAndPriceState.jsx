@@ -69,9 +69,9 @@ function createTablePriceState(columns, data) {
     return (
         <table className="w-full border-collapse text-base sm:text-lg">
             <thead>
-                <tr className="bg-gray-100">
+                <tr className="">
                     {columns.map((column, index) => (
-                        <th key={index} className="border px-4 sm:px-6 py-2 sm:py-4 text-center">
+                        <th key={index} className="border px-4 font-thin sm:px-6 py-2 sm:py-4 text-center">
                             {column}
                         </th>
                     ))}
