@@ -5,12 +5,14 @@ import Banner from './components/Banner';
 import VoucherAndPriceState from './components/VoucherAndPriceState';
 import Footer from './components/Footer';
 import './index.css';
+import Section1 from './components/Section1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Banner/>
     <Header/>
+    <Section1/>
     <VoucherAndPriceState/>
     <Footer/>
   </React.StrictMode>
