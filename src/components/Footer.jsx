@@ -14,7 +14,7 @@ function AboutSession() {
     return (
         <div className="flex flex-col items-center p-10">
             <div className="relative w-full">
-                    <video
+                <video
                     src={VideoCoffee}
                     autoPlay
                     loop

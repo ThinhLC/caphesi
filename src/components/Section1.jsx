@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
 import logo_app from "../assets/img/logo-app.png";
-import slide from "../assets/img/background-slide.png";
 import infor_app from "../assets/img/infor-app-in-store.png";
 import qr_app from "../assets/img/QR-app.png";
 import gg_play from "../assets/img/gg-play.png";
@@ -13,10 +12,11 @@ import NotifyIcon from "../assets/img/bell.png";
 import ShopingCart from "../assets/img/shopping-cart.png";
 import SearchIcon from "../assets/img/search-interface-symbol.png";
 import CustomButton from "./CustomButton";
+import Carousel from "./Carosel";
 
 function Section1() {
   return (
-    <section className="bg-green-50 pb-5">
+    <section className={`bg-color-reduceconstract bg-cover bg-center pb-5`}>
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex justify-between items-center py-4 px-6">
@@ -49,11 +49,8 @@ function Section1() {
 
         {/* Slide Section */}
         <div className="flex flex-col md:flex-row gap-4 mt-4 px-6">
-          {/* Slide */}
           <div className="flex-1">
-            <div className="h-full p-3 bg-white rounded-2xl">
-              <img className="w-full object-cover rounded-2xl" src={slide} alt="slide" />
-            </div>
+            <Carousel />
           </div>
           {/* Near Slide */}
           <div className="flex flex-col space-y-4">
@@ -65,13 +62,13 @@ function Section1() {
               <div className="my-3">
                 <img className="w-72 rounded-2xl" src={infor_app} alt="Info" />
               </div>
-              <div className="flex justify-between items-center ">
+              <div className="flex justify-between items-center">
                 <img className="w-28" src={qr_app} alt="QR Code" />
                 <div className="flex flex-col">
-                  <a className="p-2 rounded-2xl border w-40 m-2 hover:shadow-2xl transition-shadow duration-300">
+                  <a className="p-2 rounded-2xl border w-40 m-2 hover:shadow-2xl transition-shadow duration-300" href="/#">
                     <img className="md:w-40 md:h-8" src={appstore} alt="App Store" />
                   </a>
-                  <a className="p-2 rounded-2xl border w-40 m-2 hover:shadow-2xl transition-shadow duration-300">
+                  <a className="p-2 rounded-2xl border w-40 m-2 hover:shadow-2xl transition-shadow duration-300" href="/#">
                     <img className="md:w-40 md:h-8" src={gg_play} alt="Google Play" />
                   </a>
                 </div>
@@ -83,7 +80,7 @@ function Section1() {
 
         {/* Order, Vouchers, Support Section */}
         <div className="mt-4 px-6">
-          <div className="grid md:flex gap-5 ">
+          <div className="grid md:flex gap-5">
             {/* Đặt hàng */}
             <div className="md:w-2/6 bg-white p-6 rounded-lg flex hover:shadow-2xl transition-shadow duration-300">
               <div>
@@ -99,14 +96,14 @@ function Section1() {
                 <h2 className="text-2xl font-bold">Vouchers</h2>
                 <p className="mt-2 text-gray-600">Nhiều voucher giảm giá cực hot</p>
                 <CustomButton className="rounded-full">
-                    Xem ngay
+                  Xem ngay
                 </CustomButton>
               </div>
               <img className="w-32 h-32" src={voucher_icon} alt="Vouchers" />
             </div>
 
             {/* Hỗ trợ */}
-            <div className="md:w-2/6 bg-white p-6 rounded-lg flex hover:shadow-2xl transition-shadow duration-300 ">
+            <div className="md:w-2/6 bg-white p-6 rounded-lg flex hover:shadow-2xl transition-shadow duration-300">
               <div>
                 <h2 className="text-2xl font-bold">Hỗ trợ, tư vấn</h2>
                 <p className="mt-2 text-gray-600">Đội ngũ tư vấn hỗ trợ 24/24</p>

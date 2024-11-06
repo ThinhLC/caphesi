@@ -6,6 +6,9 @@ import VoucherAndPriceState from './components/VoucherAndPriceState';
 import Footer from './components/Footer';
 import './index.css';
 import Section1 from './components/Section1';
+import Product from './components/Product';
+import News from './components/News';
+import Section2 from './components/Section2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +17,9 @@ root.render(
     <Header/>
     <Section1/>
     <VoucherAndPriceState/>
+    <News/>
+    <Section2/>
+    <Product/>
     <Footer/>
   </React.StrictMode>
 );
